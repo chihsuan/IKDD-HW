@@ -1,5 +1,21 @@
 # !/usr/bin/evn python
 #-*- coding: utf8 -*-
+'''
+Homework 2 
+Name: 黃啟軒
+Student ID: F84004022
+
+Arguments:
+
+    1. query: Specify the keyword for query. For example: 王建民
+
+Running Examples:
+
+    Input: 王建民
+
+    Output: text user_name user_id
+'''
+
 import sys
 import psycopg2
 
