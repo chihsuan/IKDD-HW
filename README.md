@@ -1,4 +1,2 @@
-IKDD-HW
+Introduction to Knowledge Discovery and Data Engineering
 =======
-
-Homeworks in Introduction to Knowledge Discovery and Data Engineering Course
