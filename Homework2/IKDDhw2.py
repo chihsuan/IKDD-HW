@@ -31,9 +31,6 @@ def split_text(text):
         text = None
     return text, line
 
- 
-
-
 if __name__=="__main__":
     if len(sys.argv) != 2:
         print sys.stderr
@@ -44,8 +41,10 @@ if __name__=="__main__":
     mydb = IServDB( config[u'dbtype'], config[u'host'], config[u'dbname'], \
             config[u'username'], config[u'password'], config[u'encoding'], "")
 
-    sql_query =  ("SELECT * FROM \"twitter\" WHERE q = '%s'" % (sys.argv[1]))
+    sql_query =  ("SELECT * FROM \"twitter\" WHERE q = '%s' ORDER BY user_id ASC" % (sys.argv[1]))
+  
     responese = mydb.select(sql_query)
+    responese = sorted(responese, key=lambda row: row[3], reverse=True)
     if len(responese) == 0:
         print "There is no data matching the query string."
     else:
