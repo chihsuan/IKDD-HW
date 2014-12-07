@@ -24,7 +24,7 @@ for (i in 1:length(clust.kmeans)) {
   }
 }
 
-colnames(clust1) <- 'cluster1.csv'
+
 write.table(clust1, 'cluster1.csv', row.names=FALSE, col.names = FALSE)
 write.table(clust2, 'cluster2.csv', row.names=FALSE, col.names = FALSE)
 
