@@ -1,8 +1,24 @@
 Homework6
 ========
-## Run
+## Require Packages
+There is no need to install packages in default.
+
+if you want to use "jaccard" in hclust or use kcaa, please install the following packages:
+
+* install vegan
+* install flexclust
+
+if you want to evealute the result by our program, please install the following package:
+
+* install caret (for evealute only)
+
+## Run (command line)
 
     Rscript clusterAnalysis.R
+    
+## Evaluate    
+
+    R CMD BATCH evealute.R
 
 ## Description
 Clustering is an important means to achieve marketing segment, group identification and so on. This homework will ask you to accomplish the flow of clustering analysis. 
