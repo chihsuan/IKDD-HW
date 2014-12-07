@@ -1,4 +1,4 @@
-## Homework6
+Homework6
 ========
 ## Run
 
@@ -15,5 +15,30 @@ Please download the congressional voting data from UCI Machine Learning Reposito
 
 3. Data contain missing values. Take care to handle missing values precisely.
 
+Please try to make a 2-clusters result (We will execute your code to generate the result. Please specify how to run your code if you run with specific libraries).
+The result of unsupervised learning clearly depends on the design of "similarity/dissimilarity" measurement. We encourage you to check how to measure the similarity by Jaccard distance. You can also try K-Mean partitioning based clustering, or check the solution of hierarchical clustering. It is also preferred to find the base code from scikits-learn (for python), Weka (for java). R also contains many good implementation of clustering algorithms. 
 
+How to evaluate your result? We will use the attribute political party as the baseline. In fact, this data strongly reveal the effect from the political party. Their intention in these 16 issues are highly distinguishable. As such, we will evaluate your result by Confusion Matrix, and calculate your score as F1-score.
 
+The score will depend on your F1-score, ranging from 7~10 if you finish the code and can be reproduce correctly in the TA side.
+
+Output format: Please be complying with the output format. Please give each tuple in congressional voting data  a ID from 1~435. Your code should generate "2 files", named "cluster1.csv" and "cluster2.csv", respectively. Each file contains the IDs of all tuples belonging to the cluster -- a ID in a line.
+For example, your result may like:
+
+```
+cluster1.csv
+1
+3
+5
+7
+9
+...
+```
+```
+cluster2.csv
+2
+4
+6
+8 
+...
+```
