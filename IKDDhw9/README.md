@@ -24,3 +24,8 @@ data<-data.frame(X=as.double(substr(d_c,p_m[2,]+1, 38)), Y=as.double(substr(d_c,
 plot(data)
 )
 ```
+
+## Result
+
+![Graph of fitting curve](https://raw.githubusercontent.com/chihsuan/IKDD-HW/master/IKDDhw9/fitting_curve.png)
+
