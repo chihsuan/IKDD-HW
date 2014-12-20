@@ -1,6 +1,7 @@
 Homework list
 =======
 
+- [Homework1] (https://github.com/chihsuan/IKDD-HW/tree/master/IKDDhw1)
 - [Homework2] (https://github.com/chihsuan/IKDD-HW/tree/master/IKDDhw2)
 - [Homework3] (https://github.com/chihsuan/IKDD-HW/tree/master/IKDDhw3)
 - [Homework4] (https://github.com/LanKuDot/IKDDhw4)
